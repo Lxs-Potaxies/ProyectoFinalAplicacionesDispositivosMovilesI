@@ -1,0 +1,412 @@
+<!-- activity_research_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/researchDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/ratingBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailResearchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="RESEARCH DETAILS"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:shadowColor="#4D000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+
+                />
+
+
+            <TextView
+                android:id="@+id/researchTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailResearchTitle"
+                android:layout_marginTop="8dp"
+                android:text="Research Title: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/researchTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/researchTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="Research Title"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/InterestTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/researchTitleDetail"
+                android:layout_marginTop="8dp"
+                android:text="Area of Interest: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/areaOfInterestDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/InterestTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="Area of Interest"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/GradeTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/areaOfInterestDetail"
+                android:layout_marginTop="8dp"
+                android:text="School Grade: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/schoolGradeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/GradeTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="School Grade"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/DescriptionTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schoolGradeDetail"
+                android:layout_marginTop="8dp"
+                android:text="Topic Description: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/topicDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/DescriptionTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="Topic Description"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/ConclusionTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topicDescription"
+                android:layout_marginTop="8dp"
+                android:text="Conclusions: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Conclusions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/ConclusionTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="Conclusions"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/RecommendationsTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Conclusions"
+                android:layout_marginTop="8dp"
+                android:text="Final Recommendations: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalRecommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/RecommendationsTitleLabel"
+                android:layout_above="@id/authordetailstitle"
+                android:layout_marginTop="8dp"
+                android:text="Final Recommendations"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/CarrouselTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finalRecommendations"
+                android:layout_marginTop="8dp"
+                android:text="Images"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Carrousel"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:layout_below="@id/CarrouselTitleLabel"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                >
+
+                <!-- ViewPager para el carrusel de imágenes -->
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+                <!-- Aquí puedes añadir los indicadores de página -->
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/blue"
+                android:paddingVertical="8dp"
+                android:text="Download PDF"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/authordetailstitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Author Details"
+                android:layout_below="@id/Carrousel"
+                android:layout_above="@id/FullNameLabel"
+                android:elevation="4dp"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:shadowColor="#4D000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"/>
+
+            <TextView
+                android:id="@+id/profilePictureLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/authordetailstitle"
+                android:layout_marginTop="8dp"
+                android:text="Profile Picture "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/profilePictureURL"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/profilePictureLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:paddingBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/FullNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profilePictureURL"
+                android:layout_marginTop="8dp"
+                android:text="Name: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/FullNameLabel"
+                android:layout_above="@id/AboutMeLabel"
+                android:layout_marginTop="8dp"
+                android:text="Full Name"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/AboutMeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullName"
+                android:layout_above="@id/aboutMe"
+                android:layout_marginTop="8dp"
+                android:text="About Me: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/aboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/AboutMeLabel"
+                android:layout_above="@id/schoolGradeLabel"
+                android:layout_marginTop="8dp"
+                android:text="About Me"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/schoolGradeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutMe"
+                android:layout_above="@id/schoolGradeStudent"
+                android:layout_marginTop="8dp"
+                android:text="School Grade: "
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/schoolGradeStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/schoolGradeLabel"
+                android:layout_above="@id/ComentsTitleLabel"
+                android:layout_marginTop="8dp"
+                android:text="schoolGrade"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/ComentsTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schoolGradeStudent"
+                android:layout_marginTop="8dp"
+                android:text="Comments: "
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:shadowColor="#4D000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="144dp"
+                tools:layout_editor_absoluteY="184dp"
+                tools:listitem="@layout/comments" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- Agregar una casilla de valoraciones -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_above="@id/commentInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6" />
+
+
+    <!-- Agregar una casilla para comentarios -->
+    <EditText
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Write a comment..."
+        android:padding="12dp"
+        android:layout_above="@id/buttonPublish"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonPublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/blue"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="Post"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
+
